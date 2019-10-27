@@ -1,0 +1,5 @@
+1) Навигационная панель, заголовок, окно поиска,
+2) Блок из 4 картинок
+3) Блок Featured Invents
+4) Блок Latest News
+5) Нижний блок с Twitter Feed, Follow Us и Quick Contact.
