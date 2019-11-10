@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chart</title>
+    <style>
+        p{
+            font-family:arial;
+            color: #939393;
+        }
+        .chart{
+            border: 0px solid #000000;
+            background:#ececec;
+            font-family:serif;
+        }
+        .gt{
+            border: 0px solid #000000;
+            background:#ececec;
+            font-family:serif;
+        }
+        .canvas{
+            color:#494fae;
+        }
+        .idintification{
+            color:#63be9b;
+        }
+        .profile{
+            color:#ff4c54;
+        }
+        .comments{
+            color:#b7b7b7;
+        }
+        .special{
+            border: 0px solid #000000;
+            background:#ececec;
+            font-family:serif;
+        }
+        .black{
+            color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Creating a chart</h1>
+<div class="paragraph"><p>To create a chart, we need to instatntiate the <span class="chart">Chart</span> class. To do this, we need to pass in the 2d context of where we want
+to draw the chart. Here's an example </p></div>
+<div class="nonparagr"><div class="special"><p><span class="canvas">&lt;canvas</span> <span class="idintification">id=</span><span class="profile">myChart"</span> <span class="idintification">width=</span>
+<span class="profile">"400"</span> <span class="idintification">height=</span><span class="profile">"400"</span>&gt; &lt;<span class="canvas"> &frasl; canvas&gt;</span></p></div></div>
+<div class="nonparagr"><div class="special"><p><span class="comments">&frasl; &frasl; Get the context of the canvas element we want to select</span> <br>
+<span class="black">var</span> ctx = document.getElementById(<span class="profile">"myChart"</span>).getContext(<span class="profile">"2d"</span>);<br>
+<span class="black">var</span> myNewChart = <span class="black">new</span> Chart(ctx).PolarArea(data);</p></div></div>
+<div class="paragraph"><p>We also get the context of our canvas with JQuery. To do this, we need to get the DOM node out of the JQuery collection, and call the
+<span class="gt">getContext("2d")</span> method on that.</p> </div>
+<div class="nonparagr">><div class="special"><p><span class="comments">&frasl; &frasl; Get context with JQuery - using JQuery's .get() method.</span></p>
+<p><span class="black">var</span> ctx = $(<span class="profile">"#myChart"</span>).get(0).getContext(<span class="profile">"2d"</span>);</p>
+<p><span class="comments">&frasl; &frasl; This will het the first returned node in the JQuery collection</span></p>
+<p><span class="black">var</span> myNewChart = <span class="black">new</span> Chart(ctx);</p></div></div>
+
+</body>
+</html>
