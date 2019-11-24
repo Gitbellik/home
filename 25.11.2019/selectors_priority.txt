@@ -1,0 +1,36 @@
+* - 0
+li - 1
+li - 1
+h1 + p - 2
+p + p - 2
+ul li - 2
+li::first-line - 2
+h1 + p::first-line - 3
+p + p img - 3
+a[href$=".pdf"]::before - 3
+div div input[type=text] - 3
+div div input[type=text] - 3
+ul ol+li - 3
+div section>:nth-child(4):not(div) - 4
+p + p + p > a::before - 5
+last-child - 10
+a:active - 11
+button.button_submit - 11
+ul li.red - 12
+li:not(.red) - 12
+button[type="submit"].button_submit - 12
+ul li:last-child - 12
+ul li:nth-child(even) - 12
+button[type="submit"].button_submit - 12
+form > div > div > div > button.button_submit - 15
+li.red.level - 21
+li:not(.red):not(.green) - 21
+div.cool p.cool a - 23
+.call-to-action:visited:active - 30
+#t34 - 100
+#social li a::before - 103
+#social li a[href*="facebook"]::before - 104
+#content .text p - 111
+body > div.star > a#new - 113
+#content #wrap * - 200
+#page header, #page article, #page footer - 303
