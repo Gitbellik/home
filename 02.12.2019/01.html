@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сверстать карандаш</title>
+</head>
+<style>
+	 body{
+        margin: 0;
+        background: #fefcea;
+    }
+	.pencil{
+        background: linear-gradient(to bottom, yellow 0%,yellow 100%);
+        width: 80vmin;
+        height: 5vw;
+		position:absolute;
+		content: '';
+		top: 5vw;
+    }
+    .pencil::before{
+        background: linear-gradient(to bottom, red 0%,red 100%);
+        width: 80vmin;
+        height: 5vw;
+		position:absolute;
+		content: '';
+		top: 5vw;
+    }
+    .pencil::after{
+        background: linear-gradient(to bottom, yellow 0%,yellow 100%);
+        width: 80vmin;
+        height: 5vw;
+		position:absolute;
+		content: '';
+		top: 10vw;
+    }
+    .pencil{
+        position: relative;
+        width: 0; 
+        height: 0;
+        border-left: 14vw solid brown;
+        border-right: 7vw solid transparent;
+        border-top: 10vw solid transparent;
+        border-bottom: 10vw solid transparent;
+        border-radius: 100%;
+    }
+</style>
+<body>
+    <h1>Сверстать карандаш, не меняя содержимого контейнера body с помощью position: absolute</h1>
+    <div class="pencil"></div>
+</body>
+</html>
