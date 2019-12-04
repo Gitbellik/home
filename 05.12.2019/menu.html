@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ООО "Рога и копыта" - заготовка кожи и всего остального</title>
+    <style>
+        body{
+            margin: 0;
+            overflow-x: hidden;
+        }
+        li{
+            list-style-type: none;
+        }
+        .logo{
+            position: relative;
+            background-color: orange;
+            border: 1px hidden black;
+            width: 150px;
+            height: 50px;
+            top: 15px;
+            left: 5px;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+        .up{
+            position: relative;
+            background-color: coral;
+            width: 100%;
+            height: 100px;
+        }
+        .down{
+            position: relative;
+            background-color: #1eb4e9;
+            text-align: center;
+            top: -1vw;
+            height: 150px;
+            width: auto;
+            padding-top: 75px;
+        }
+        .service_info{
+            position: relative;
+            left: 70vw;
+        }
+        #company{
+            position: absolute;
+            top: -2vw;
+        }
+        #delivery{
+            position: absolute;
+            top: -2vw;
+            left: 12vw;
+        }
+        #jobs{
+            position: relative;
+            top: -2vw;
+            left: 16vw;
+            transition: none;
+            cursor: pointer;
+            
+        }
+        #jobs:hover{
+            background: white;
+            color: red;
+            position: relative;
+            width: 100px;
+            height: 130px;
+        }
+        .catalogue{
+            position: relative;
+            background-color: #FF00FF;
+            width: 300px;
+            height: 700px;
+            top: 0vw;
+
+        }
+        .emp1{
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 1vw;
+        }
+        .emp2{
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 1vw;
+        }
+        .emp3{
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 1vw;
+        }
+       #jobs:hover ul [class]{
+            display: inline-block;
+            
+        }
+        #jobs.with-transition{
+            transition: 1s;
+        }
+        .catalogue>div{
+            position: relative;
+            top: 5px;
+            left: 50px;
+        }
+         .horns{
+            position: absolute;
+            top: 25px;
+            
+        }
+        .hooves{
+            position: absolute;
+            top:50px;
+        }
+        .leather{
+            
+            position: absolute;
+            top:75px;
+        }
+        .horns>ul{
+            position: absolute;
+            left: 230px;
+            top: 0px;
+            display: none;
+        }
+        .hooves>ul{
+            position: absolute;
+            left: 230px;
+            top: 5px;
+            display: none;
+        }
+        .leather>ul{
+            position: absolute;
+            left: 230px;
+            display: none;
+        }
+       input:nth-child(1){
+            position: absolute;
+            top: 27px;
+        }
+        input:nth-child(2){
+            position: absolute;
+            top: 40px;
+        }
+        input:nth-child(3){
+            position: absolute;
+            top: 50px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="up">
+        <div class="logo">Logo</div>
+        <ul class="service_info">
+            <li id="company">О компании</li>
+            <li id="delivery">Доставка</li>
+            <li id="jobs">Вакансии
+                <ul class="one">
+                    <li class="emp1">Заготовщик кожи</li>
+                    <li class="emp2">Заготовщик рогов</li>
+                    <li class="emp3">Заготовщик копыт</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <aside class="catalogue">
+        <div>Каталог</div>
+        <ul>
+            <input type='checkbox' name="check1" ><label for="check1"><li class="horns">Рога</label>
+                <ul>
+                    <li>Бараньи</li>
+                    <li>Оленьи</li>
+                </ul>
+            </li>
+            <input type='checkbox' name="check2" ><label for="check2"><li class="hooves">Копыта</label>
+                <ul>
+                    <li>Бараньи</li>
+                    <li>Оленьи</li>
+                    <li>Свиные</li>
+                </ul>
+            </li>
+            <input type='checkbox' name="check3" ><label for="check3"><li class="leather">Кожа</label>
+                <ul>
+                    <li>Крокодила</li>
+                    <li>Чебурашки</li>
+                    <li>Старухи шапокляк</li>
+                </ul></li>
+        </ul>
+    </aside>
+    <main></main>
+    <footer class="down">&copy; 2019</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Фотогалерея</title>
+</head>
+<style> 
+    body{
+    margin: 0;
+    overflow-x:hidden;
+    }
+    .slide{
+    display: none;
+    position: relative;
+    left: 70px;
+    }
+    #three:checked ~ #slider>.slide:nth-child(3){
+    display: block;
+    }
+    #two:checked ~ #slider>.slide:nth-child(2){
+    display: block;
+    }
+    #one:checked ~ #slider>.slide:nth-child(1){
+    display: block;
+    }
+    #four:checked ~ #slider>.slide:nth-child(4){
+    display: block;
+    }
+    #five:checked ~ #slider>.slide:nth-child(5){
+    display: block;
+    }
+    .nextSlide{
+        border: 45px solid transparent; border-left: 30px solid red;
+        position: absolute;
+        top: 150px;
+        left: 450px;
+    }
+    .prevSlide{
+        border: 45px solid transparent; border-right: 30px solid red;
+        position: absolute;
+        top: 150px;
+        left: -120px;
+    }
+    input[type="radio"]{
+        position: relative;
+        top: 500px;
+        left: 230px;
+    }
+</style>
+<body>
+    <h1>добавить стили и расставить for и src так, чтобы работала фотогаллерея</h1>
+	<input type="radio" id="one" name="ghost">
+	<input type="radio" id="two" name="ghost">
+	<input type="radio" id="three" name="ghost">
+	<input type="radio" id="four" name="ghost">
+	<input type="radio" id="five" name="ghost">
+	<div id="slider">
+		<section class="slide">
+			<img src="https://i.pinimg.com/originals/21/2e/24/212e24650f5c6b70c999400a4d44e430.jpg" width="400px" height="400px">
+			<label for="five" class="prevSlide"></label>
+			<label for="two" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://cdn.civitatis.com/argentina/bariloche/galeria/tecnica-snowboar-cerro-catedral.jpg" width="400px" height="400px">
+			<label for="one" class="prevSlide"></label>
+			<label for="three" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://www.stonesnowboards.com/img/cms/dirty%20fish%20stone%20snowboards.jpg" width="400px" height="400px">
+			<label for="two" class="prevSlide"></label>
+			<label for="four" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://www.snowboard.by/assets/images/catalog/main-snowboard-1.jpg" width="400px" height="400px">
+			<label for="three" class="prevSlide"></label>
+			<label for="five" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://images.blue-tomato.com/is/image/bluetomato/ugc/bluetomato-snowboards-dominik-wagner-nordkette-handplant-innsbruck-1548138657.tif?$tsl$&wid=1920&hei=1080&fit=crop%2C1" width="400px" height="400px">
+			<label for="four" class="prevSlide"></label>
+			<label for="one" class="nextSlide"></label>
+		</section>
+		<div class="pins">
+			<label for="one"></label>
+			<label for="two"></label>
+			<label for="three"></label>
+			<label for="four"></label>
+			<label for="five"></label>
+		</div>
+	</div>
+</body>
+
+</html>

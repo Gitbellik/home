@@ -12,39 +12,50 @@
         background: #fefcea;
     }
 	.pencil{
-        background: linear-gradient(to bottom, yellow 0%,yellow 100%);
+        background: linear-gradient(to bottom, yellow 0%, yellow 35%, red 35%, red 65%, yellow 65%, yellow 100%);
         width: 80vmin;
-        height: 5vw;
-		position:absolute;
+        height: 10vw;
 		content: '';
 		top: 5vw;
-    }
-    .pencil::before{
-        background: linear-gradient(to bottom, red 0%,red 100%);
-        width: 80vmin;
-        height: 5vw;
-		position:absolute;
-		content: '';
-		top: 5vw;
-    }
-    .pencil::after{
-        background: linear-gradient(to bottom, yellow 0%,yellow 100%);
-        width: 80vmin;
-        height: 5vw;
-		position:absolute;
-		content: '';
-		top: 10vw;
-    }
-    .pencil{
         position: relative;
-        width: 0; 
-        height: 0;
-        border-left: 14vw solid brown;
-        border-right: 7vw solid transparent;
-        border-top: 10vw solid transparent;
-        border-bottom: 10vw solid transparent;
-        border-radius: 100%;
     }
+    .pencil::before {
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            float: right;
+            position: absolute;
+            right: -7vmin;
+            top: -1vmin;
+            border-color: transparent;
+            border-left-width: 6vw;
+            border-top-width: 6vw;
+            border-bottom-width: 6vw;
+            border-radius: 50%;
+            border-left-color: brown;
+            border-style: solid;
+        }
+        .pencil::after {
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            float: right;
+            position: absolute;
+            right: -6vw;
+            bottom: 2vw;
+            border-color: transparent;
+            border-radius: 50%;
+            border-left-width: 3vw;
+            border-top-width: 3vw;
+            border-bottom-width: 3vw;
+            border-left-color: black;
+            border-style: solid;
+        }
+    
+    
+    
 </style>
 <body>
     <h1>Сверстать карандаш, не меняя содержимого контейнера body с помощью position: absolute</h1>
