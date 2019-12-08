@@ -1,0 +1,101 @@
+body, ul{
+    margin: 0;
+    list-style: none;
+}
+header{
+    background-color: coral;
+    position: relative;
+    min-width: 480px;
+    min-height: 120px;
+
+}
+header>div{
+    background-color: orange;
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+}
+header>ul>li{
+    display: inline-block;
+    position: relative;
+}
+header>ul>li>ul{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background-color: orchid;
+    padding-left: -5px;
+}
+header>ul>:hover:nth-child(3)>ul{
+    display: block;
+}
+header>ul>li>ul>li{
+    min-width: 150px;
+    margin-left: -40px;
+}
+header>ul>li:last-child::after{
+    display: inline;
+    content: '\25bc';
+}
+footer{
+    background-color: blue;
+    text-align: center;
+    min-height: 120px;
+    line-height: 120px;
+    min-width: 480px;
+}
+main{
+    min-height: 400px;
+    border-left: 250px solid hotpink;
+    min-width: 230px;
+}
+aside{
+    position: absolute;
+    min-width: 250px;
+}
+header>ul{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+aside li , aside label{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+aside ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+aside input{
+    display: none;
+}
+#kozha ~ ul, #roga ~ ul, #kopyta ~ ul{
+    display: none;
+}
+#kozha:checked ~ ul, #roga:checked ~ ul, #kopyta:checked ~ ul{
+    display: block;
+}
+aside>ul>li>label::after{
+    content: '\25b6';
+    display: inline;
+    color: black;
+    position: absolute;
+    right: 0;      
+}
+label{
+    display: block;
+}
+#roga ~ ul, #kopyta ~ ul, #kozha ~ ul{
+    min-width: 200px;
+    left: 250px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+}
+aside>ul>li{
+    position: relative;
+    }
